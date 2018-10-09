@@ -28,7 +28,7 @@ demo列表：
 
 ### 在线预览
 
-源代码：[查看源代码]()
+源代码：[查看源代码](https://github.com/Anilway/FE-Practice/tree/master/wikiSearch)
 
 预览：[查看Demo](https://codepen.io/Anilway/full/jzwzZo)
 
@@ -46,7 +46,7 @@ demo列表：
 
 ### 在线预览
 
-源代码：[查看源代码]()
+源代码：[查看源代码](https://github.com/Anilway/FE-Practice/tree/master/danmu)
 
 预览：[查看Demo](https://codepen.io/Anilway/full/ZxpMog/)
 
@@ -62,9 +62,9 @@ demo列表：
 
 ### 在线预览
 
-源代码：[查看源代码]()
+源代码：[查看源代码](https://github.com/Anilway/FE-Practice/tree/master/bootnews)
 
-预览：[查看Demo]()
+预览：[查看Demo](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Anilway/FE-Practice/master/bootnews/index.html)
 
 ![](readme-data/03.png)
 
@@ -72,9 +72,9 @@ demo列表：
 
 ### 在线预览
 
-源代码：[查看源代码]()
+源代码：[查看源代码](https://github.com/Anilway/FE-Practice/tree/master/learn-online)
 
-预览：[查看Demo]()
+预览：[查看Demo](https://htmlpreview.github.io/?https://github.com/Anilway/FE-Practice/blob/master/learn-online/index.html)
 
 ![](readme-data/04.PNG)
 
@@ -82,9 +82,9 @@ demo列表：
 
 ### 在线预览
 
-源代码：[查看源代码]()
+源代码：[查看源代码](https://github.com/Anilway/FE-Practice/tree/master/blog)
 
-预览：[查看Demo]()
+预览：[查看Demo](http://htmlpreview.github.io/?https://github.com/Anilway/FE-Practice/blob/master/blog/homepage.html)
 
 ![](readme-data/05.PNG)
 
@@ -111,7 +111,7 @@ demo列表：
 
 ### 在线预览
 
-源代码：[查看源代码]()
+源代码：[查看源代码](https://github.com/Anilway/FE-Practice/tree/master/randomQuote)
 
 预览:[查看Demo](https://codepen.io/Anilway/full/BrQoLo/)
 
@@ -121,8 +121,8 @@ demo列表：
 
 ### 在线预览
 
-源代码：[查看源代码]()
+源代码：[查看源代码](https://github.com/Anilway/FE-Practice/tree/master/snack)
 
-预览:[查看Demo]()
+预览:[查看Demo](http://htmlpreview.github.io/?https://github.com/Anilway/FE-Practice/blob/master/snack/snack.html)
 
 ![](readme-data/07.gif)

@@ -76,7 +76,7 @@ demo列表：
 
 预览：[查看Demo]()
 
-![](readme-data/04.png)
+![](readme-data/04.PNG)
 
 ## <h2 id='#05'>博客主页</h2>
 
@@ -86,7 +86,7 @@ demo列表：
 
 预览：[查看Demo]()
 
-![](readme-data/05.png)
+![](readme-data/05.PNG)
 
 ## <h2 id='#06'>随机引言</h2>
 

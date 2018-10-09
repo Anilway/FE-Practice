@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hi,Wiki | by anilway</title>
+	<link rel="stylesheet" href="css/main-css.css">
+</head>
+<body>
+	<div class="header">
+		<img src="1.png" alt="" class="logo" width='70'>
+		<!-- <div class="logo"></div> -->
+		<input type="text" class="content" placeholder='想了解什么？'>
+		<button class="search">搜索</button>
+		<div class="choice">
+			<button class="random">随便看看</button>
+			<button class="hot">热门</button>
+			<button class="forbidden">图片</button>
+			<button class="forbidden">精选</button>
+			<button class="forbidden">特色</button>
+			<button class="forbidden">你知道吗</button>
+			<button class="forbidden">历史上的今天</button>
+		</div>
+		<div class='select'>
+			<label for='zh' class='radio-txt' style='color:white;font-weight:bold;'>中文搜索</label><input id='zh' class='radio' type="radio" name="searchType" value="zh" checked='ture'>
+			<label for='en' class='radio-txt'>英文搜索</label><input id='en' class='radio' type="radio" name="searchType" value="en">
+			<label for='zh-en' class='radio-txt'>并列搜索</label><input id='zh-en' class='radio' type="radio" name="searchType" value="zh-en">
+		</div>
+		<!-- <div class="point">敬请期待！</div> -->
+	</div>
+	<div class="notice"></div>
+	<!-- <ul class="hot-result"></ul> -->
+	<ul class="result"></ul>
+	<div class="box">
+		<ul class="zh-result"></ul>
+		<ul class="en-result"></ul>
+	</div>
+
+	
+
+	<!-- 引入json2.js -->
+	<script src='lib/JSON.js'></script>
+	<!-- 引入项目js -->
+	<script src='js/main-js.js'></script>
+</body>
+</html>

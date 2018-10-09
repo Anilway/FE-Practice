@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 标准视窗配置 -->
+	<meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no' >
+	<title>注册</title>
+	<link rel="stylesheet" href="lib/bootstrap.css">
+	<link rel="stylesheet" href="css/main-css.css">
+	<script src='lib/holder.js'></script>
+	<script src='lib/jquery-3.3.1.js'></script>
+	<script src='js/main-js.js'></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-heading">
+				<a href='index.html' class="navbar-brand">新闻网</a>
+			</div>
+
+			<label id='menu' for="toggle-menu" class='visible-xs-inline-block'>MENU</label>
+			<input type="checkbox" id='toggle-menu'>
+			<div class="hidden-xs">
+				<ul class="nav navbar-nav navbar-left">
+					<li class='active'><a href="index.html">首页</a></li>
+					<li><a href="news.html">国内</a></li>
+					<li><a href="news.html">国际</a></li>
+					<li><a href="news.html">时事</a></li>
+					<li><a href="news.html">娱乐</a></li>
+					<li><a href="news.html">数读</a></li>
+				</ul>
+				<form action="" class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder='搜索感兴趣的新闻…'>
+					</div>
+					<button class="btn btn-default">搜一下</button>
+				</form>	
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html">登录</a></li>
+					<li class='active'><a href="singup.html">注册</a></li>
+				</ul>
+			</div>
+		</div>
+		<label id='menu' for="toggle-menu" class='visible-xs-inline-block'>MENU</label>
+			<input type="checkbox" id='toggle-menu'>
+	</nav>
+	<div class="container container-small">
+		<form action="">
+			<h1>注册</h1>
+			<div class="form-group">
+				<label for="" class="control-label title">手机</label>
+				<input type="text" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="" class="control-label title">验证码</label>
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<div class="input-group-btn">
+						<button class="btn btn-default">获取验证码</button>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="" class="control-label title">用户名</label>
+				<input type="text" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="" class="control-label title">密码</label>
+				<input type="text" class="form-control">
+			</div>
+			<div class="form-group">
+				<button class="btn btn-primary btn-block">注册</button>
+			</div>
+			<div class="form-group">
+				注册新闻网即代表您同意《<a href="news.html">新闻网服务条款</a>》
+			</div>
+		</form>
+	</div>
+	<div class="footer">
+		@2018 新闻网 中国互联网新闻中心京ICP证1401号京ICP备125649号-5公网安备
+	</div>
+</body>
+</html>

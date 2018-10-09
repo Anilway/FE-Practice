@@ -1,0 +1,18 @@
+.list{
+	height: 804px;
+}
+.list .box{
+	height: 800px;
+}
+
+.list .box.author{
+	width:705px;
+}
+
+.list .box.poet{
+	height:720px;
+}
+
+.body.poet{
+	padding:5px 20px;
+}

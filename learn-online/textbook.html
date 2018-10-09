@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>诗歌鉴赏 | 在线学习平台</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-textbook.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+			<span></span>
+		</div>
+		<div class="welcome">
+			
+		</div>
+	</div>
+	<div class="content">
+		<div class="nav">
+			<ul class="nav-bar">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="textbook.html" class='active'>教学资源</a></li>
+				<li><a href="poet.html">诗人殿堂</a></li>
+				<li><a href="media.html">视听资源</a></li>
+				<li><a href="classroom.html">名家讲堂</a></li>
+				<li><a href="classic.html">经典赏析</a></li>
+				<li><a href="bbs.html">微社区</a></li>
+				<li><a href="viewpoint.html">评价中心</a></li>
+				<li><a href="massage.html">公告通知</a></li>
+			</ul>
+		</div>
+		<div class="sub">
+			<ul id='search' class='head'>
+				<li>全部诗歌</li>
+				<li>高一·上册</li>
+				<li>高一·下册</li>
+				<li>高二·上册</li>
+				<li>高二·下册</li>
+				<li>高三·上册</li>
+				<li>高三·下册</li>
+			</ul>
+			<div class="list">
+				<div class="list1"></div>
+				<div class="list1">
+					<a href="source.html" class="card card1 g1-sup"><div>《雨巷》</div></a>		
+					<a href="" class="card card2 g1-sup"><div>《再别康桥》</div></a>		
+					<a href="" class="card card3 g1-sup"><div>《沁园春·长沙》</div></a>		
+				</div>
+				<div class="list1">
+					<a href="" class="card card4 g1-sub"><div>《诗经》两首</div></a>
+					<a href="" class="card card5 g1-sub"><div>《氓》</div></a>
+					<a href="" class="card card6 g1-sub"><div>《采薇》</div></a>
+					<a href="" class="card card7 g1-sub"><div>《离骚》</div></a>
+					<a href="" class="card card8 g1-sub"><div>《短歌行》</div></a>
+					<a href="" class="card card9 g1-sub"><div>《归园田居》(其一)</div></a>
+				</div>
+				<div class="list1">
+					<a href="" class="card card10 g2-sup"><div>《秋兴八首》(其一)</div></a>
+					<a href="" class="card card11 g2-sup"><div>《咏怀古迹》(其三)</div></a>
+					<a href="" class="card card12 g2-sup"><div>《登高》</div></a>
+					<a href="" class="card card13 g2-sup"><div>《琵琶行并序》</div></a>
+					<a href="" class="card card14 g2-sup"><div>《李商隐诗两首》</div></a>
+					<a href="" class="card card15 g2-sup"><div>《锦瑟》</div></a>
+					<a href="" class="card card16 g2-sup"><div>《马嵬》(其二)</div></a>
+				</div>
+				<div class="list1">
+					<a href="" class="card card17 g2-sub"><div>《柳永词两首》</div></a>
+					<a href="" class="card card18 g2-sub"><div>《望海潮》</div></a>
+					<a href="" class="card card19 g2-sub"><div>《雨霖铃》</div></a>
+					<a href="" class="card card20 g2-sub"><div>《苏轼词两首》</div></a>
+					<a href="" class="card card21 g2-sub"><div>《念奴娇赤壁怀古》</div></a>
+					<a href="" class="card card22 g2-sub"><div>《定风波》</div></a>
+					<a href="" class="card card23 g2-sub"><div>《辛弃疾词两首》</div></a>
+					<a href="" class="card card24 g2-sub"><div>《水龙吟》</div></a>
+					<a href="" class="card card25 g2-sub"><div>《永遇乐》</div></a>
+					<a href="" class="card card26 g2-sub"><div>《李清照词两首》</div></a>
+					<a href="" class="card card27 g2-sub"><div>《醉花阴》</div></a>
+					<a href="" class="card card28 g2-sub"><div>《声声慢》</div></a>
+				</div>
+				<div class="list1">
+					<a href="" class="card card29 g3-sup"><div>《归去来兮辞》</div></a>
+				</div>
+				<div class="list1">
+					<a href="javascript:;" class="card card g3-sub"><div>本学期无</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+		var ul=document.getElementById('search');
+		var li=ul.getElementsByTagName('li');
+		var list=document.getElementsByClassName('list1');
+		li[0].style.color='red';
+		for (var i = 1; i < li.length; i++) {
+			li[i].index=i;
+			li[i].onclick=function(){
+				for (var j = 0; j < li.length; j++) {
+					li[j].style.color='#025833';
+					list[j].style.display='none';
+				}
+				this.style.color='red';
+				list[this.index].style.display='block';
+			}
+		}
+		li[0].onclick=function(){
+			for (var j = 0; j < li.length; j++) {
+					li[j].style.color='#025833';
+					list[j].style.display='block';
+			}
+			this.style.color='red';
+		}
+	</script>
+</body>
+</html>

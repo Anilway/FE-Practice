@@ -1,0 +1,399 @@
+/*样式初始化*/
+
+body,ul,li{margin:0;padding:0;}
+ul,li{list-style: none;}
+a{text-decoration:none;}
+
+body{
+	/*background-color:#858A83;*/
+	/*background-color:#F2F2F2;*/
+	background-color:#DAD9CB;
+	min-height:800px;
+}
+
+/*头部样式*/
+.header{
+	/*width: 100%;*/
+	height:70px;
+	background:#5C7318;
+	color:white;
+	text-align: left;
+	line-height: 50px;
+	font-size:20px;
+	font-weight:bold;
+	padding-left:20px;
+	position:relative;
+}
+
+.header .logo{
+	width:410px;
+	height:62px;
+	padding-top:8px;
+	/*background:pink;*/
+	position:relative;
+}
+
+.header .logo span{
+	display:inline-block;
+	position:absolute;
+	top:0;
+	right:0;
+	line-height: 70px;
+	/*background:purple;*/
+}
+
+.header .welcome{
+	position:absolute;
+	top:0;
+	right:50px;
+	height:70px;
+	line-height: 70px;
+	font-size:15px;
+	font-family:'微软雅黑';
+	font-weight:normal;
+}
+
+
+/*内容部分*/
+.content{
+	margin:20px auto;
+	/*margin-left:200px;*/
+	/*margin-right:200px;*/
+	width:1017px;
+	/*min-height:740px;*/
+	padding-bottom:6px;
+	/*border:2px solid black;*/
+	border:2px solid #025833;
+	/*background-color:#94A191;*/
+	/*background-color:#DAD9CB;*/
+	background-color:#D7FEB6;
+}
+
+.content .nav{
+	height:160px;
+	/*background-color:#88876B;*/
+	background-color:#D7FEB6;
+	background-image:url(../img/nav.png);
+	position:relative;
+}
+.content .nav .nav-bar{
+	/*background:red;*/
+	overflow: hidden;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.content .nav .nav-bar li{
+	float:left;
+	/*background: #171F12;*/
+	background: #035934;
+	/*padding:5px 0;*/
+	height:30px;
+	line-height: 30px;
+}
+.content .nav .nav-bar li a{
+	color:white;
+	height:30px;
+	/*background:#171F12;*/
+	background:#035934;
+	text-align:center;
+	display:inline-block;
+	width:113px;
+}
+.content .nav .nav-bar li a:hover{
+	 /*background:#30f8a2; */
+	 background:#049a59; 
+}
+
+
+/*上半部分页面*/
+.list{
+	height: 304px;
+	padding:3px;
+	overflow: hidden;
+}
+
+.list .box{
+	margin:3px;
+	/*border:2px solid #171F12;*/
+	border:2px solid #025833;
+	height: 300px;
+	/*background:#B7BDAF;*/
+	/*background:#D7FEB6;*/
+	background:#F2F0CA;
+	float:left;
+}
+.list .box .top{
+	height:35px;
+	/*background-color:#737C83;*/
+	background-color:#E0E0E0;
+	/*border-bottom:2px solid #171F12; */
+	border-bottom:2px solid #025833; 
+	line-height: 35px;
+	font-weight: bold;
+	padding-left:20px;
+	color:#025833;
+}
+
+.list .box.msg{
+	width:286px;
+}
+
+.list .box.author{
+	width:496px;
+}
+.list .box.contact{
+	width:199px;
+}
+
+.list .box.poem{
+	width:286px;
+}
+.list .box.video{
+	width:346px;
+}
+.list .box.app{
+	width:349px;
+}
+
+
+.body ul{
+	list-style-type: disc !important;
+}
+.time{
+	font-size:13px;
+	line-height: 25px;
+	color:gray;
+}
+.item{
+	padding-left:5px;
+}
+.item a{
+	font-size:13px;
+	line-height: 25px;
+	color:black;
+}
+.item a:hover{
+	text-decoration: underline;
+}
+
+
+.author-item{
+	width: 150px;
+	height:210px;
+	background:pink;
+	float:left;
+	margin-top:10px;
+	margin-left:8px;
+	position:relative;
+	border:3px solid white;
+	box-shadow: 0 0 5px gray;
+}
+
+.author-item:hover{
+	opacity:0.8;
+}
+
+.author-item.item1{
+	background-image:url(../img/dws.jpg);
+	background-size:cover;
+}
+
+.author-item.item2{
+	background-image:url(../img/zcy.jpg);
+	background-size:cover;
+}
+
+.author-item.item3{
+	background-image:url(../img/bzl.jpg);
+	background-size:cover;
+}
+
+.author-item span.name{
+	width:100%;
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:-25px;
+	text-align: center;
+	color:black;
+	font-size:13px;
+}
+
+.qr{
+	width:150px;
+	height:150px;
+	margin:20px auto;
+	/*background:pink;*/
+	background-image:url(../img/qr.jpg);
+	background-size:cover;
+}
+.qr-title{
+	margin-top:-10px;
+	display:block;
+	font-size:13px;
+	text-align: center;
+}
+.bbs{
+	margin:10px auto;
+	width: 150px;
+	height:35px;
+	background:#2179A7;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 35px;
+	font-size:18px;
+	color:white;
+
+}
+
+/*下半部分页面*/
+.text{
+	font-size:14px;
+	padding-left:40px;
+	padding-top:10px;
+	font-family: "微软雅黑";
+	line-height:31px;
+	color:black;
+	/*color:#015831;*/
+	/*font-weight:bold;*/
+}
+
+
+
+.video-list{
+	width:163px;
+	height:120px;
+	background:pink;
+	margin-top:7px;
+	margin-left:5px;
+	float:left;
+	border:1px solid #94A191;
+	position:relative;
+}
+
+.video-list.list1{
+	background-image:url(../img/1.jpg);
+	background-size:cover;
+}
+
+.video-list.list2{
+	background-image:url(../img/2.jpg);
+	background-size:cover;
+}
+
+.video-list.list3{
+	background-image:url(../img/3.jpg);
+	background-size:cover;
+}
+
+.video-list.list4{
+	background-image:url(../img/4.jpg);
+	background-size:cover;
+}
+
+.video-list span.title{
+	display:block;
+	height:20px;
+	background:white;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width: 100%;
+	text-align: center;
+	height:35px;
+	line-height: 35px;
+	opacity:0.5;
+	font-size:18px;
+	color:black;
+	font-weight: bold;
+}
+
+.video-list:hover >span.title{
+	opacity:0.8;
+}
+
+div.sys{
+	height:210px;
+	background:pink;
+	float:left;
+	margin:10px 5px;
+	position:relative;
+}
+div.sys.online{
+	width:210px;
+	background-image:url(../img/app1.png);
+	/*background-position: right;*/
+	background-size:210px 210px;
+}
+div.sys.mob{
+	width:115px;
+	background-image:url(../img/app2.png);
+	/*background-position: right;*/
+	background-size:115px 210px;
+}
+
+div.sys .title{
+	display:block;
+	width:100%;
+	position:absolute;
+	left:0;
+	bottom:-25px;
+	text-align: center;
+	font-size:13px;
+}
+/*页脚样式*/
+
+
+
+/*poem*/
+.list .box.poem{
+	background-image:url(../img/bk4.jpg);
+	background-position: center center;
+	background-size:cover;
+}
+
+.active{
+	/*background-color:#30f8a2 !important;*/
+	background-color:#049a59 !important;
+}
+
+a.top-title{
+	color: black;
+}
+
+
+.card{
+	display:block;
+	width:228px;
+	height:150px;
+	/*border:2px solid #025833;*/
+	border:5px solid white;
+	margin:7px;
+	cursor:pointer;
+	text-align:center;
+	line-height: 150px;
+	float:left;
+	box-shadow: 0px 0px 10px gray;
+	position:relative;
+}
+.card:hover{
+	box-shadow: 0px 0px 0px white;
+}
+
+.card div{
+	width:228px;
+	height: 50px;
+	opacity:0.6;
+	filter:alpha(opacity:60);
+	position:absolute;
+	bottom:0;
+	line-height: 50px;
+	text-align:center;
+	font-size:25px;
+	background-color:#025833;
+}
+.card:hover>div{
+	opacity:1;
+	filter:alpha(opacity:100);
+}

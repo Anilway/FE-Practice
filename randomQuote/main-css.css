@@ -1,0 +1,117 @@
+/*初始化样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	min-width:500px;
+	background:brown;
+
+}
+/*引言容器样式*/
+div.box{
+	width: 450px;
+	min-height:150px;
+	border-radius:10px;
+	padding:40px 50px 100px 60px;
+	margin:0 auto;
+	position:relative;
+	top:50px;
+	/*overflow: hidden;*/
+	background: rgba(0,0,0,0.6);
+	color:white;
+	user-select:none;
+}
+
+div.box .fa-quote-left{
+	font-size:30px;
+	position:absolute;
+	left:20px;
+	top:20px;
+}
+div.box .quote{
+	/*background:yellow;*/
+	/*position:absolute;*/
+	/*padding:0 50px;*/
+	text-align: center;
+	font-size:30px;
+}
+span{
+	font-size:22px;
+}
+
+div.box .quoteFrom{
+	/*background: yellow;*/
+	font-size:22px;
+	text-align: right;
+	margin-top:30px;
+	line-height: 30px;
+	margin-right:-20px;
+}
+
+
+/*分享图标样式*/
+div.box .share{
+	/*background:yellow;*/
+	overflow: hidden;
+	width:200px;
+	position:absolute;
+	left:30px;
+	bottom: 30px;
+}
+div.box .wechat , div.box .weibo{
+	width:55px;
+	height:50px;
+	background: brown;
+	text-align: center;
+	line-height: 50px;
+	border-radius:5px;
+	cursor:pointer;
+	opacity:0.8;
+	filter:alpha(opacity:80);
+	float:left;
+	margin-right: 10px;
+	font-size:30px;
+	user-select:none;
+}
+
+
+/*按钮样式*/
+div.box .btn{
+	width:100px;
+	height:30px;
+	background: brown;
+	text-align: center;
+	line-height: 30px;
+	padding:10px;
+	border-radius:5px;
+	position:absolute;
+	right:30px;
+	bottom:30px;
+	cursor:pointer;
+	opacity:0.8;
+	filter:alpha(opacity:80);
+	user-select:none;
+}
+
+div.box .btn:hover,div.box .wechat:hover,div.box .weibo:hover{
+	opacity:1;
+	filter:alpha(opacity:100);
+}
+
+/*注明作者*/
+div#by{
+	position:absolute;
+	z-index: 10;
+	bottom:-40px;
+	left:0;
+	text-align: center;
+	width:100%;
+	font-size: 13px;
+}
+
+div#by a{
+	color:white;
+	text-decoration: none;
+}

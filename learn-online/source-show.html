@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>诗歌鉴赏 | 在线学习平台</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/src-style.css">
+	<script src="js/main.js"></script>
+	<style>
+		.list{
+			height: 404px;
+		}
+		.list .box{
+			height: 400px;
+		}
+		audio{
+			display:none;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+			<span></span>
+		</div>
+		<div class="welcome">
+			
+		</div>
+	</div>
+	<div class="content">
+		<div class="nav">
+			<ul class="nav-bar">
+				<li><a href="index.html">网站首页</a></li>
+				<li><a href="source.html">诗歌全文</a></li>
+				<li><a href="source-poet.html">戴望舒介绍</a></li>
+				<li><a href="source-analysis.html">名家解读</a></li>
+				<li><a href="source-voice.html">名家朗读</a></li>
+				<li><a href="source-mvoice.html">配乐朗诵</a></li>
+				<li><a href="source-same.html">同类诗歌赏析</a></li>
+				<li><a href="source-data.html">文献资料</a></li>
+				<li><a href="source-show.html" class='active'>学生朗读展示</a></li>
+			</ul>
+		</div>
+		<div class="sub">
+			<div class="list">
+				<div class="box msg">
+					<div class="top">■ 朗读投票</div>
+					<div class="body">
+						<div class="img"></div>
+						<div class="vote">
+							<div class="left">
+								<ul class='team'>
+									<li class='group'>第一组：</li>
+									<li class='group'>第二组：</li>
+									<li class='group'>第三组：</li>
+									<li class='group'>第四组：</li>
+								</ul>
+							</div>
+							<div class="right">
+								<ul class='team'>
+									<li class="group bar1 voteBar"></li>
+									<li class="group bar2 voteBar"></li>
+									<li class="group bar3 voteBar"></li>
+									<li class="group bar4 voteBar"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box author">
+					<div class="top">■ 朗读作品展示墙</div>
+					<div class="body">
+						<div class="audioBox">
+							<div class="cd cd1"></div>
+							<div class="play">
+							</div>
+							<div class="voteBtn">投我一票</div>
+							<div class="team">第一组</div>
+						</div>
+						<div class="audioBox">
+							<div class="cd cd2"></div>
+							<div class="play"></div>
+							<div class="voteBtn">投我一票</div>
+							<div class="team">第二组</div>
+						</div>
+						<div class="audioBox">
+							<div class="cd cd3"></div>
+							<div class="play"></div>
+							<div class="voteBtn">投我一票</div>
+							<div class="team">第三组</div>
+						</div>
+						<div class="audioBox">
+							<div class="cd cd4"></div>
+							<div class="play"></div>
+							<div class="voteBtn">投我一票</div>
+							<div class="team">第四组</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<audio src="media/1.mp3" controls="controls">朗读</audio>
+		<audio src="media/2.mp3" controls="controls">朗读</audio>
+		<audio src="media/3.mp3" controls="controls">朗读</audio>
+		<audio src="media/4.mp3" controls="controls">朗读</audio>
+	</div>
+	<script>
+		var cd=document.getElementsByClassName('cd');
+		var play=document.getElementsByClassName('play');
+		var audio=document.getElementsByTagName('audio');
+		var voteBtn=document.getElementsByClassName('voteBtn');
+		var voteBar=document.getElementsByClassName('voteBar');
+		// 音频控制
+		for (var i = 0; i < play.length; i++) {
+			play[i].index=i;
+			play[i].onclick=function(){
+				if(audio[this.index].paused){
+					for (var j = 0; j < play.length; j++) {
+						play[j].style.backgroundImage='url(img/play10.png)';
+						cd[j].className='cd cd'+(j+1);
+						audio[j].pause();
+					}
+					this.style.backgroundImage='url(img/play11.png)';
+					cd[this.index].className='cd cd'+(this.index+1)+' xuanzhun';
+					audio[this.index].play();
+				}else{
+					this.style.backgroundImage='url(img/play10.png)';
+					cd[this.index].className='cd cd'+(this.index+1);
+					audio[this.index].pause();
+				}
+			}
+		}
+
+		// 投票控制
+		for (var i = 0; i < voteBtn.length; i++) {
+			voteBtn[i].index=i;
+			voteBtn[i].onclick=function(){
+				var curWidth=voteBar[this.index].offsetWidth;
+				if(curWidth/200<1){
+					voteBar[this.index].style.width=curWidth+2+'px';
+				}
+			}
+		}
+
+	</script>
+</body>
+</html>

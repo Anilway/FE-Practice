@@ -1,0 +1,244 @@
+div.list{
+	height:auto;
+	clear:both;
+}
+div.list:after{
+	content: '';
+	display:block;
+	clear:both;
+}
+
+ul.head{
+	height:35px;
+	background-color:#E0E0E0;
+	border-bottom:2px solid #025833; 
+	line-height: 35px;
+	font-weight: bold;
+	padding-left:20px;
+	color:#025833;
+}
+
+ul.head li{
+	float:left;
+	/*background: pink;*/
+	margin-left:20px;
+	margin-right:20px;
+}
+ul.head li:hover{
+	color:red;
+	cursor:pointer;
+}
+
+.card{
+	color:white;
+	background-size:cover;
+}
+
+
+.card.card1{
+	background-image:url(../img/textbook/1.jpg);
+}
+.card.card2{
+	background-image:url(../img/textbook/2.jpg);
+}
+.card.card3{
+	background-image:url(../img/textbook/3.jpg);
+}
+.card.card4{
+	background-image:url(../img/textbook/4.jpg);
+}
+.card.card5{
+	background-image:url(../img/textbook/5.jpg);
+}
+.card.card6{
+	background-image:url(../img/textbook/6.jpg);
+}
+.card.card7{
+	background-image:url(../img/textbook/7.jpg);
+}
+.card.card8{
+	background-image:url(../img/textbook/8.jpg);
+}
+.card.card9{
+	background-image:url(../img/textbook/9.jpg);
+}
+.card.card10{
+	background-image:url(../img/textbook/10.jpg);
+}
+.card.card11{
+	background-image:url(../img/textbook/11.jpg);
+}
+.card.card12{
+	background-image:url(../img/textbook/12.jpg);
+}
+.card.card13{
+	background-image:url(../img/textbook/13.jpg);
+}
+.card.card14{
+	background-image:url(../img/textbook/14.jpg);
+}
+.card.card15{
+	background-image:url(../img/textbook/15.jpg);
+}
+.card.card16{
+	background-image:url(../img/textbook/16.jpg);
+}
+.card.card17{
+	background-image:url(../img/textbook/17.jpg);
+}
+.card.card18{
+	background-image:url(../img/textbook/18.jpg);
+}
+.card.card19{
+	background-image:url(../img/textbook/19.jpg);
+}
+.card.card20{
+	background-image:url(../img/textbook/20.jpg);
+}
+.card.card21{
+	background-image:url(../img/textbook/21.jpg);
+}
+.card.card22{
+	background-image:url(../img/textbook/22.jpg);
+}
+.card.card23{
+	background-image:url(../img/textbook/23.jpg);
+}
+.card.card24{
+	background-image:url(../img/textbook/24.jpg);
+}
+.card.card25{
+	background-image:url(../img/textbook/25.jpg);
+}
+.card.card26{
+	background-image:url(../img/textbook/26.jpg);
+}
+.card.card27{
+	background-image:url(../img/textbook/27.jpg);
+}
+.card.card28{
+	background-image:url(../img/textbook/28.jpg);
+}
+.card.card29{
+	background-image:url(../img/textbook/29.jpg);
+}
+
+
+/*诗人殿堂背景图片*/
+.card.poet1{
+	background-image:url(../img/srdt/dws1.jpg);
+}
+.card.poet2{
+	background-image:url(../img/srdt/bzl.png);
+}
+.card.poet3{
+	background-image:url(../img/srdt/xzm.png);
+}
+.card.poet4{
+	background-image:url(../img/srdt/aq.png);
+}
+.card.poet5{
+	background-image:url(../img/srdt/hz.png);
+}
+.card.poet6{
+	background-image:url(../img/srdt/wgz.png);
+}
+.card.poet7{
+	background-image:url(../img/srdt/st.png);
+}
+.card.poet8{
+	background-image:url(../img/srdt/bd.png);
+}
+.card.poet9{
+	background-image:url(../img/srdt/sz.png);
+}
+.card.poet10{
+	background-image:url(../img/srdt/xmr.jpg);
+}
+.card.poet11{
+	background-image:url(../img/srdt/hs.png);
+}
+.card.poet12{
+	background-image:url(../img/srdt/zkj.png);
+}
+.card.poet3{
+	background-image:url(../img/srdt/xzm.png);
+}
+.card.poet3{
+	background-image:url(../img/srdt/xzm.png);
+}
+.card.poet3{
+	background-image:url(../img/srdt/xzm.png);
+}
+.card.poet3{
+	background-image:url(../img/srdt/xzm.png);
+}
+.card.poet3{
+	background-image:url(../img/srdt/xzm.png);
+}
+.card.poet3{
+	background-image:url(../img/srdt/xzm.png);
+}
+.card.poet3{
+	background-image:url(../img/srdt/xzm.png);
+}
+
+
+/*视听资源背景图片*/
+.card.media1{
+	background-image:url(../img/pd1.png);
+}
+.card.media2{
+	background-image:url(../img/pd2.png);
+}
+.card.media3{
+	background-image:url(../img/pd4.png);
+}
+.card.media4{
+	background-image:url(../img/pd5.png);
+}
+.card.media5{
+	background-image:url(../img/rzh.jpg);
+}
+.card.media6{
+	background-image:url(../img/pcx.png);
+}
+.card.media7{
+	background-image:url(../img/qz.jpg);
+}
+.card.media8{
+	background-image:url(../img/pyls-1.jpg);
+}
+.card.media9{
+	background-image:url(../img/pyls-2.jpg);
+}
+
+
+/*名家讲堂背景图片*/
+.card.classroom1{
+	background-image:url(../img/classroom/1.png);
+}
+.card.classroom2{
+	background-image:url(../img/classroom/2.png);
+}
+.card.classroom3{
+	background-image:url(../img/classroom/3.png);
+}
+.card.classroom4{
+	background-image:url(../img/classroom/4.png);
+}
+.card.classroom5{
+	background-image:url(../img/classroom/5.png);
+}
+.card.classroom6{
+	background-image:url(../img/classroom/6.png);
+}
+.card.classroom7{
+	background-image:url(../img/classroom/7.png);
+}
+.card.classroom8{
+	background-image:url(../img/classroom/8.png);
+}
+.card.classroom9{
+	background-image:url(../img/classroom/9.png);
+}

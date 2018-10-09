@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>诗歌鉴赏 | 在线学习平台</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-textbook.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+			<span></span>
+		</div>
+		<div class="welcome">
+			
+		</div>
+	</div>
+	<div class="content">
+		<div class="nav">
+			<ul class="nav-bar">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="textbook.html">教学资源</a></li>
+				<li><a href="poet.html">诗人殿堂</a></li>
+				<li><a href="media.html">视听资源</a></li>
+				<li><a href="classroom.html" class='active'>名家讲堂</a></li>
+				<li><a href="classic.html">经典赏析</a></li>
+				<li><a href="bbs.html">微社区</a></li>
+				<li><a href="viewpoint.html">评价中心</a></li>
+				<li><a href="massage.html">公告通知</a></li>
+			</ul>
+		</div>
+		<div class="sub">
+			<ul id='search' class='head'>
+				<li>全部诗歌</li>
+				<li>中国古典诗歌意象</li>
+				<li>现代诗歌</li>
+			</ul>
+			<div class="list"></div>
+			<div class="list">
+				<a href="http://open.163.com/movie/2013/10/2/K/M9AV3L4IE_M9BEHJ92K.html" target='_blank' class="card classroom1 g1-sup"><div>诗歌艺术要素</div></a>	
+				<a href="http://open.163.com/movie/2013/10/A/K/M9AV3L4IE_M9BEHPNAK.html" target='_blank' class="card classroom2 g1-sup"><div>意像概念的由来</div></a>	
+				<a href="http://open.163.com/movie/2013/10/T/2/M9AV3L4IE_M9BEHUMT2.html" target='_blank' class="card classroom3 g1-sup"><div>意像概念的界定</div></a>	
+				<a href="http://open.163.com/movie/2013/10/2/L/M9AV3L4IE_M9BVSOL2L.html" target='_blank' class="card classroom4 g1-sup"><div>古典诗歌意像群</div></a>	
+				<a href="http://open.163.com/movie/2013/10/T/3/M9AV3L4IE_M9CFVVHT3.html" target='_blank' class="card classroom5 g1-sup"><div>传统诗歌意像</div></a>	
+				<a href="http://open.163.com/movie/2013/10/L/A/M9AV3L4IE_M9DK1TOLA.html" target='_blank' class="card classroom6 g1-sup"><div>意像创新</div></a>	
+				<a href="http://open.163.com/movie/2013/10/N/3/M9AV3L4IE_M9E826BN3.html" target='_blank' class="card classroom7 g1-sup"><div>意像结构一</div></a>	
+				<a href="http://open.163.com/movie/2013/10/7/K/M9AV3L4IE_M9ENUL27K.html" target='_blank' class="card classroom8 g1-sup"><div>意像结构二</div></a>	
+			</div>
+			<div class="list">
+				<a href="http://open.163.com/movie/2007/7/U/D/M6GJ5FINB_M6GJ8K4UD.html" target='_blank' class="card classroom9 g1-sub"><div>意像主义</div></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+		var ul=document.getElementById('search');
+		var li=ul.getElementsByTagName('li');
+		var list=document.getElementsByClassName('list');
+		for (var i = 1; i < li.length; i++) {
+			li[i].index=i;
+			li[i].onclick=function(){
+				for (var j = 0; j < li.length; j++) {
+					li[j].style.color='#025833';
+					list[j].style.display='none';
+				}
+				this.style.color='red';
+				list[this.index].style.display='block';
+			}
+		}
+		li[0].onclick=function(){
+			for (var j = 0; j < li.length; j++) {
+					li[j].style.color='#025833';
+					list[j].style.display='block';
+			}
+			this.style.color='red;'
+		}
+	</script>
+</body>
+</html>

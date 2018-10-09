@@ -1,0 +1,214 @@
+.list{
+	height: 704px;
+}
+.list .box{
+	height: 700px;
+}
+
+.list .box.author{
+	width:705px;
+}
+
+div.img{
+	width:275px;
+	height:200px;
+	background:pink;
+	margin:10px auto;
+	background-image: url(../img/1-1.jpg);
+	background-size: cover;
+}
+
+div.vote{
+	width: 275px;
+	height:120px;
+	/*background:pink;*/
+	margin:0 auto;
+}
+
+.vote div{
+	height:120px;
+	/*background:purple;*/
+	float:left;
+}
+.vote div.left{
+	width:68px;
+}
+.vote div.right{
+	width:200px;
+	margin-left:6px;
+}
+
+
+
+.group{
+	margin:10px 0;
+	width:100%;
+	height:20px;
+	/*background:yellow;*/
+	font-size: 17px;
+	line-height: 20px;
+	color:#303B3E;
+}
+
+.group.bar1{
+	background:#FCC15A;
+	width:40%;
+}
+.group.bar2{
+	background:#D94678;
+	width:90%;
+}
+.group.bar3{
+	background:#6356A6;
+	width:80%;
+}
+.group.bar4{
+	background:#96CB3C;
+	width:30%;
+}
+
+.vote-choice{
+	width:155px;
+	height:340px;
+	background:pink;
+	float:left;
+	margin:10px;
+	position:relative;
+}
+
+div.voice{
+	width:100%;
+	height:30px;
+	background:purple;
+	position:absolute;
+	bottom:70px;
+}
+
+div.voice span{
+	color:yellow;
+	font-size:17px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.vote-btn{
+	margin:0 auto;
+	width:100px;
+	height:40px;
+	background:#00487E;
+	position:absolute;
+	bottom:10px;
+	left:0;
+	right:0;
+	border-radius:5px;
+	text-align: center;
+	line-height: 40px;
+	color:white;
+	font-size:20px;
+	cursor:pointer;
+}
+
+.vote-btn:hover{
+	background:red;
+}
+
+/*学生朗读展示*/
+.audioBox{
+	width:155px;
+	height:200px;
+	background:white;
+	background-image:url(../img/audioBox4.png);
+	float:left;
+	margin:30px 10px 10px 10px;
+	position: relative;
+	border-radius:8px;
+	box-shadow: 0px 0px 8px;
+
+}
+.audioBox .voteBtn{
+	width:140px;
+	height:35px;
+	border-radius: 18.5px;
+	border:1px solid #035934;
+	text-align:center;
+	line-height: 35px;
+	color:#035934;
+	position:absolute;
+	margin:auto;
+	left:0;
+	right:0;
+	bottom:-55px;
+	cursor:pointer;
+	/*禁止鼠标选中文字*/
+	-moz-user-select: none; 
+	-o-user-select:none;  
+	-webkit-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none;
+}
+.audioBox .voteBtn:hover{
+	background:#035934;
+	color:white;
+}
+
+.audioBox .team{
+	width:155px;
+	text-align: center;
+	position: absolute;
+	bottom:-90px;
+	font-weight: bold;
+}
+
+.audioBox .cd{
+	width: 100px;
+	height: 100px;
+	background:yellow;
+	margin:20px auto;
+	border-radius: 50%;
+	background-size:100px 100px;
+}
+.audioBox .cd.cd1{
+	background-image:url(../img/cd1.png);
+}
+.audioBox .cd.cd2{
+	background-image:url(../img/cd2.png);
+}
+.audioBox .cd.cd3{
+	background-image:url(../img/cd3.png);
+}
+.audioBox .cd.cd4{
+	background-image:url(../img/cd4.png);
+}
+
+.audioBox .play{
+	width: 30px;
+	height: 30px;
+	/*background:green;*/
+	margin:0 auto;
+	background-image:url(../img/play10.png);
+	background-size:30px 30px;
+	cursor:pointer;
+}
+
+.xuanzhun{
+ -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+}
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+    to{-webkit-transform: rotate(360deg)}
+}
+@-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
+    to{-moz-transform: rotate(359deg)}
+}
+@-o-keyframes rotate{from{-o-transform: rotate(0deg)}
+    to{-o-transform: rotate(359deg)}
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹幕</title>
+	<!-- 引入bootstrap -->
+	<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css"> -->
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="danmu-css.css">
+</head>
+<body>
+	<div id='screen' class="screen">
+		<!-- <embed height="415" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="https://static.hdslb.com/miniloader.swf" flashvars="aid=20805011&p=1"></embed> -->
+	</div>
+	<div class="contr">
+		<input id='chatText' type="text" class="form-control input-lg chat " placeholder='说点什么'>
+		<button id='send' class="btn btn-primary btn-block btn-lg">发送</button>
+		<button id='clear' class="btn btn-success btn-block btn-lg">清空</button>
+	</div>
+
+
+	<!-- 引入野狗云SDK -->
+	<script src = 'https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js'></script>
+	<!-- 引入项目js -->
+	<script src='danmu-js.js'></script>
+</body>
+</html>

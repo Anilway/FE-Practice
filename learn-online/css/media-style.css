@@ -1,0 +1,21 @@
+.list{
+	height: 604px;
+}
+.list .box{
+	height: 600px;
+}
+
+.list .box.author{
+	width:705px;
+}
+
+
+.list .box.author{
+	width:705px;
+}
+
+div.play{
+	width: 600px;
+	height: 480px;
+	margin: 30px auto;
+}

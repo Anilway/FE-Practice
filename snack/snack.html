@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一起来玩贪吃蛇</title>
+	<style>
+		#box{
+			margin:0 auto;
+			width:496px;
+			height:496px;
+			border:3px solid black;
+			position:relative;
+			background:#444444;
+		}
+		.son{
+			width:15px;
+			height:15px;
+			border-bottom: 1px solid gray;
+			border-right: 1px solid gray;
+			float:left;
+		}
+		.snake{
+			width:15px;
+			height:15px;
+			background:black;
+			position:absolute;
+			top:240px;
+			left:240px;
+		}
+		.eggfood{
+			width:15px;
+			height:15px;
+			background:#66D9D0;
+			position:absolute;
+		}
+		.food{
+			width:15px;
+			height:15px;
+			background:yellow;
+			position:absolute;
+		}
+		#control{
+			margin:0 auto;
+			position:relative;
+			width:495px;
+		}
+		button{
+			display:block;
+			position:absolute;
+			width:150px;
+			height:60px;
+			font-size: 40px;
+			text-align: center;
+			line-height: 60px;
+			font-family: "隶书";
+			display: none;
+		}
+		#top{
+			top:5px;
+			left:172px;
+		}
+		#botton{
+			top:120px;
+			left:172px;
+		}
+		#left{
+			top:60px;
+			left:0;
+		}
+		#right{
+			top:60px;
+			right:0;
+		}
+		#btn{
+			display: block;
+			width:150px;
+			position:relative;
+			margin:0 auto;
+		}
+		#stop{
+			display:none;
+			width:50px;
+			height:50px;
+			border-radius: 50%;
+			line-height: 50px;
+			font-family: "微软雅黑";
+			font-size:30px;
+			position:absolute;
+			top:68px;
+			left:222px;
+		}
+		#txtspeed{
+			position: absolute;
+			left:0;
+			top:0;
+			height:20px;
+		}
+		#txtegg{
+			position: absolute;
+			right:0;
+			top:0;
+			height:20px;
+		}
+		#num{
+			margin:0 auto;
+			width:496px;
+			height:28px;
+			/*border:1px solid black;*/
+			position:relative;
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			var box=document.getElementById("box");
+			var snake=document.getElementById("snake");
+			var top=document.getElementById("top");
+			var botton=document.getElementById("botton");
+			var left=document.getElementById("left");
+			var right=document.getElementById("right");
+			var btn=document.getElementById("btn");
+			var stop=document.getElementById("stop");
+			var txtspeed=document.getElementById("txtspeed");
+			var txtegg=document.getElementById("txtegg");
+			var timer=null;
+			var sss=250;
+			btn.onclick=function(){
+				btn.style.display="none";
+				top.style.display=botton.style.display=left.style.display=right.style.display=stop.style.display="block";	
+			};
+			for(var i=0;i<960;i++){
+				var s=document.createElement("div");
+				s.className="son";
+				box.appendChild(s);
+			}
+			function move(prop,attr,speed){
+					clearInterval(timer);
+					stop.onclick=function(){
+						speed=0;
+					};
+					timer=setInterval(function(){
+						//添加蛇蛋
+						if(document.getElementById("dan")==undefined){
+							var egg=document.createElement("div");
+							egg.className="food";
+							egg.id="dan";
+							egg.style.left=16*parseInt(Math.random()*31)+"px";
+							egg.style.top=16*parseInt(Math.random()*31)+"px";
+							box.append(egg);
+						}
+						//蛇移动
+						snake.style[prop]=snake[attr]+speed+"px";
+						var arr=document.getElementsByClassName("eggfood");
+						if(arr[0]){
+								txtegg.value="当前长度："+arr.length+"       锅锅最高纪录："+143;
+								for(var i=arr.length-1;i>0;i--){
+									arr[i].style.left=arr[i-1].offsetLeft+"px";
+									arr[i].style.top=arr[i-1].offsetTop+"px";
+								}
+								arr[0].style.top=snake.offsetTop+"px";
+								arr[0].style.left=snake.offsetLeft+"px";
+								}
+						//判断是否吃到蛋
+						if(document.getElementById("dan")){
+							var egg=document.getElementById("dan");
+							if(snake.offsetTop==egg.offsetTop&&snake.offsetLeft==egg.offsetLeft){
+								box.removeChild(egg);
+								var newegg=document.createElement("div");
+								newegg.className="eggfood";
+								box.appendChild(newegg);
+								if(250-sss>=0 && 250-sss<100){
+									sss-=3;
+								}else if(250-sss>100 && 250-sss<175){
+									sss-=2;
+								}else if(250-sss>175 && 250-sss<195){
+									sss-=1;
+								}else if(sss==55){
+									sss=55;
+								}
+								txtspeed.value="当前速度："+(250-sss);
+							}
+						}
+						
+						
+						//判断游戏是否结束
+						if(snake[attr]>484||snake[attr]<0){
+							clearInterval(timer);
+							if(snake[attr]>0){
+								snake.style[prop]=480+"px";
+								arr[0].style[prop]=480+"px";
+							}else{
+								snake.style[prop]=0;
+								arr[0].style[prop]=0;
+							}
+							alert("Game Over!\n"+"您吃了"+arr.length+"个蛋");
+							var re=confirm("再来一局？");
+							if(re){
+								location.reload();
+							}else{
+								alert("您可以继续游戏！");
+							}
+						}
+					},sss);
+			}
+			//↑：38；↓：40；←：37；→：39；
+			document.onkeydown=function(ev){
+				var oEvent=ev||event;
+				if(oEvent.keyCode==40){
+					move('top','offsetTop',16);
+					if(oEvent.keyCode==38){
+						return false;
+					}
+				}
+				if(oEvent.keyCode==38){
+					
+					move('top','offsetTop',-16);
+				}
+				if(oEvent.keyCode==37){
+					
+					move('left','offsetLeft',-16);
+				}
+				if(oEvent.keyCode==39){
+					
+					move('left','offsetLeft',16);
+				}
+			}
+			top.onclick=function(){
+				move('top','offsetTop',-16);
+			};
+			botton.onclick=function(){
+				move('top','offsetTop',16);
+			};
+			left.onclick=function(){
+				move('left','offsetLeft',-16);
+			};
+			right.onclick=function(){
+				move('left','offsetLeft',16);
+			};
+			var son=document.getElementsByClassName("son");
+			for(var j=0;j<son.length;j++){
+				son[j].onclick=function(){
+					this.style.background="black";
+				}
+			}
+		};
+	</script>
+</head>
+<body>
+	<div id="num">
+		<input type="text" id="txtspeed" value="当前速度：默认">
+		<input type="text" id="txtegg" size="30" value="当前长度：默认">
+	</div>	
+	<div id="box">
+		<div class="son"></div>
+		<div id="snake" class="snake"></div>
+	</div>
+	<div id="control">
+		<button id="btn">控制器</button>
+		<button id="top" >上</button>
+		<button id="botton">下</button>
+		<button id="left">左</button>
+		<button id="right">右</button>
+		<button id="stop">P</button>
+	</div>
+</body>
+</html>
